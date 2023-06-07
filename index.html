@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="ALA Periode 4, Frontend">
-        <meta name="author" content="Lucas, Emre, Jayme, Max">
-        <meta name="keywords" content="">
-        <script src="js/main.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link id="favicon" rel="shortcut icon" type="image/png" href="">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <title> ALA Backend. AI </title>
-    </head>
-    <body>
-            <!-- not friendly for elder but nice to see -->
-            <textarea id="message-history" cols="140" rows="20"></textarea>
-            <!-- this hard coded device is created as an example.
-                    DO NOT hard code devices! -->
-            <br>
-            <button id="toggle" value="woonkamer/schemerlamp">toggle</button>
-            <br>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ALA Periode 4, Frontend">
+    <meta name="author" content="Lucas, Emre, Jayme, Max">
+    <meta name="keywords" content="">
+    <script src="js/main.js"></script>
+    <link id="favicon" rel="shortcut icon" type="image/png" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title> ALA Backend. AI </title>
+    <script src="static/event_stream.js"></script>
+    <link rel="stylesheet" href="frelder.css">
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="jquery.wheelcolorpicker.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/wheelcolorpicker.css" />
+</head>
+<body>
+    <textarea id="message-history" cols="140" rows="20"></textarea>
+    <br><br><button id="toggle" value="woonkamer/schemerlamp">toggle</button>
+    <br><br><button id="colour" value="woonkamer/schemerlamp">kleur</button>
+    <br><br><button id="rainbow" value="woonkamer/schemerlamp">rainbow mode</button>
+    <input id="wheelvalue" type="text" data-wheelcolorpicker />
+    <script src="script.js"></script>
+</body>
 </html>
