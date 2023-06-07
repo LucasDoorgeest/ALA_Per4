@@ -1,0 +1,80 @@
+/* 
+
+background: #212529
+letter kleur: ##c2c2c2
+lettertype: Arial
+fontsize h1: 2.5rem
+kleur h1: #ffffff
+fontsize normaal: 19px
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p.articleText {
+    font-size: 19px;
+    padding-bottom: 30px;
+    margin-left: 12px;
+    color: #c2c2c2;
+}
+
+a.articleLink{
+    font-size: 14px;
+    padding-bottom: 30px;
+    margin-left: 12px;
+    color: #c2c2c2;
+}
+
+h1.articleHeader {
+    font-weight: 640;
+    padding-bottom: 30px;
+    margin-left: 12px;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: #121415;
+    font-weight: 400;
+    display: block;
+    line-height: 1.5;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+
+.footer a{
+    color: #c2c2c2;
+    font-size: 14px;
+}
+
+.footerMini{
+    display: flex;
+    text-align: center;
+    padding: 32px 0;
+}
+
+footer{
+    width: 100vw;
+}

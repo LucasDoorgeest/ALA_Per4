@@ -7,22 +7,88 @@
     <meta name="description" content="ALA Periode 4, Frontend">
     <meta name="author" content="Lucas, Emre, Jayme, Max">
     <meta name="keywords" content="">
-    <script src="js/main.js"></script>
     <link id="favicon" rel="shortcut icon" type="image/png" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/frelder.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/wheelcolorpicker.css"/>
+    <script src="static/event_stream.js" defer></script>
+    <script type="text/javascript" src="jquery-2.0.3.min.js" defer></script>
+    <script type="text/javascript" src="jquery.wheelcolorpicker.js" defer></script>
+    <script src="script.js" defer></script>
     <title> ALA Backend. AI </title>
-    <script src="static/event_stream.js"></script>
-    <link rel="stylesheet" href="frelder.css">
-    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="jquery.wheelcolorpicker.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/wheelcolorpicker.css" />
 </head>
 <body>
-    <textarea id="message-history" cols="140" rows="20"></textarea>
-    <br><br><button id="toggle" value="woonkamer/schemerlamp">toggle</button>
-    <br><br><button id="colour" value="woonkamer/schemerlamp">kleur</button>
-    <br><br><button id="rainbow" value="woonkamer/schemerlamp">rainbow mode</button>
-    <input id="wheelvalue" type="text" data-wheelcolorpicker />
-    <script src="script.js"></script>
+    <header>
+
+    </header>
+    <main>
+        <!-- <textarea id="message-history" cols="140" rows="20"></textarea> -->
+        <br><br><button id="toggle" value="woonkamer/schemerlamp">toggle</button>
+        <br><br><button id="colour" value="woonkamer/schemerlamp">kleur</button>
+        <br><br><button id="rainbow" value="woonkamer/schemerlamp">rainbow mode</button>
+        <input id="wheelvalue" type="text" data-wheelcolorpicker/>
+    </main>
+    <footer class="footer column container">
+        <article class="row">
+            <article class="column">
+                <h1 class="articleHeader">
+                    Social
+                </h1>
+                <a class="articleLink" href="#">
+                    Instagram
+                </a>
+                <a class="articleLink" href="#">
+                    Twitter
+                </a>
+                <a class="articleLink" href="#">
+                    Youtube
+                </a>
+                <a class="articleLink" href="#">
+                    LinkedIn
+                </a>
+            </article>
+            <article class="column">
+                <h1 class="articleHeader">
+                    Support
+                </h1>
+                <a class="articleLink" href="#">
+                    Help Center
+                </a>
+                <a class="articleLink" href="#">
+                    FAQ
+                </a>
+                <a class="articleLink" href="#">
+                    Learning
+                </a>
+                <a class="articleLink" href="#">
+                    Videos
+                </a>
+            </article>
+            <article class="column">
+                <h1 class="articleHeader">
+                    Company
+                </h1>
+                <a class="articleLink" href="#">
+                    About
+                </a>
+            </article>
+        </article>
+        <article class="footerMini row">
+            <article>
+                <p class="articleText">
+                    <i class="fa-sharp fa-regular fa-copyright"></i> 2022-2023 Company Name, All Rights Reserved.
+                </p>
+            </article>
+            <article>
+                <a class="articleLink" href="#">
+                    Privacy Policy
+                </a>
+                <a class="articleLink" href="#">
+                    Terms Of Use
+                </a>
+            </article>
+        </article>
+    </footer>
 </body>
 </html>
