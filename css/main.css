@@ -27,6 +27,7 @@ a.articleLink{
     padding-bottom: 30px;
     margin-left: 12px;
     color: #c2c2c2;
+    text-align: none;
 }
 
 h1.articleHeader {
@@ -64,17 +65,20 @@ body {
 
 /* Footer */
 
-.footer a{
-    color: #c2c2c2;
-    font-size: 14px;
-}
-
 .footerMini{
     display: flex;
     text-align: center;
+    justify-content: center;
     padding: 32px 0;
 }
 
-footer{
-    width: 100vw;
+.footerGroot{
+    justify-content: center;
+    gap: 20vw;
+}
+
+.footer{
+    border-top: #343a40 solid 1px;
+    margin-top: 30px;
+    padding-top: 30px;
 }
