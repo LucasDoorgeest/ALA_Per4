@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 p.articleText {
@@ -9,6 +8,13 @@ p.articleText {
     padding-bottom: 30px;
     margin-left: 12px;
     color: #c2c2c2;
+}
+
+p.imgText{
+    font-size: 19px;
+    padding-bottom: 30px;
+    margin-left: 12px;
+    color: #121415;
 }
 
 a.articleLink{
@@ -36,8 +42,8 @@ body {
 
 .container{
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 3rem;
+    padding-left: 3rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -51,6 +57,54 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.align{
+    display: flex;
+    align-items: center;
+}
+
+.gapArticle{
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Header */
+
+.logo{
+    margin: 2vh;
+    height: 6rem;
+}
+
+/* Main */
+
+.button{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: white;
+    padding: 1.5vh;
+    color: #121415;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+.show_bg {
+    background-image:
+    linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(2,2,15,0.3) 40%, rgba(43,125,200,1) 100%),
+    url('../img/keuken.jpg');
+    width: 30vmin;
+    height: 42vmin;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.centeredText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 /* Footer */
 
