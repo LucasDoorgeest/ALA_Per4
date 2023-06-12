@@ -222,3 +222,21 @@ h3, span {
     font-size: 1.1em;
     line-height: 20px;
 }
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    background-color: #121415;
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #343a40
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #343a40;
+    border-radius: 10px;
+  }
