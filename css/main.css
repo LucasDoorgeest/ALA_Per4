@@ -98,6 +98,12 @@ body {
 .woonkamer{
     background-image: url('../img/woonkamer.jpg');
 }
+
+.setting{
+    background-image: url(../img/gearsetting.png);
+    background-size: 150px 150px;
+}
+
 /*------------------------ Cards ------------------------ */
 
 :root {
