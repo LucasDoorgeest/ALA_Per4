@@ -48,7 +48,18 @@ function setupEventSource() {
                                             button.innerHTML = "Toggle";
                                             button.classList.add("toggleButton")
                                             object.appendChild(button);
-
+                                            button.onclick = (e) => {
+                                                fetch('http://192.168.0.100:8000/api/set', {
+                                                    method: 'POST',
+                                                    headers: {
+                                                        'Content-Type': 'application/json'
+                                                    },
+                                                    body: JSON.stringify({
+                                                        'topic': value.friendly_name,
+                                                        'feature': {'state': 'toggle'}
+                                                    })
+                                                })
+                                            }
                                         }
                                     }
                                 }
