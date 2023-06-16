@@ -40,14 +40,6 @@ body {
     line-height: 1.5;
 }
 
-.container{
-    width: 100%;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .row{
     display: flex;
     flex-direction: row;
@@ -61,6 +53,12 @@ body {
 .align{
     display: flex;
     align-items: center;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gapArticle{
@@ -160,7 +158,7 @@ body {
     align-items: center;
     background-color: var(--bg-color);
     display: flex;
-    height: 100vh;
+    margin: 30px 0 30px 0;
     justify-content: center;
 }
 
@@ -255,7 +253,6 @@ h3, span {
 .card-content:nth-child(1) {
     background-image: url('../img/keuken.jpg');
     background-size: cover;
-    filter: blur(1.5px);
 }
 
 .card-info-wrapper {
