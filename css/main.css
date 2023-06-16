@@ -101,7 +101,22 @@ body {
 
 .setting{
     background-image: url(../img/gearsetting.png);
-    background-size: 150px 150px;
+}
+
+.eetkamer{
+    background-image: url('../img/eetkamer.jpg');
+}
+
+.slaapkamer{
+    background-image: url('../img/slaapkamer.jpg');
+}
+
+.badkamer{
+    background-image: url('../img/badkamer.jpg');
+}
+
+.settings{
+    background-image: url('../img/badkamer.jpg');
 }
 
 /*------------------------ Cards ------------------------ */
