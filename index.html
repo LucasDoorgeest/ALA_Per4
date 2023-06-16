@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link type="text/css" rel="stylesheet" href="css/wheelcolorpicker.css"/>
     <script src="static/event_stream.js" defer></script>
-    <script type="text/javascript" src="jquery-2.0.3.min.js" defer></script>
-    <script type="text/javascript" src="jquery.wheelcolorpicker.js" defer></script>
-    <script src="script.js" defer></script>
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js" defer></script>
+    <script type="text/javascript" src="js/jquery.wheelcolorpicker.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script type="text/javascript" src="js/hover.js" defer></script>
+    <link rel="stylesheet" href="css/hover.css">
     <title> ALA Backend. AI </title>
 </head>
 <body class="container">
@@ -28,37 +30,91 @@
         </article>
     </header>
     <main>
-        <section class="align column">
-            <article class="row gapArticle">
-                <a class='show_bg' href="#">
-                    <p>Keuken</p>
+        <h1 class="articleHeader">
+          Selecteer een kamer
+        </h1>
+        <section class="all-cards">
+            <article id="cards">
+                <a class="card" href="#">
+                  <article class="card-content">
+                    <article class="card-image">
+                    </article>
+                    <article class="card-info-wrapper">
+                      <article class="card-info">
+                        <article class="card-info-title">
+                          <p>Keuken</p>  
+                        </article>    
+                      </article>
+                    </article>
+                  </article>
                 </a>
-                <a class='show_bg' href="#">
-                    <p>Keuken</p>
+                <a class="card" href="#">
+                  <article class="card-content">
+                    <article class="card-image">
+                    </article>
+                    <article class="card-info-wrapper">
+                      <article class="card-info">
+                        <article class="card-info-title">
+                          <p>Woonkamer</p>  
+                        </article>    
+                      </article>  
+                    </article>
+                  </article>
                 </a>
-                <a class='show_bg' href="#">
-                    <p>Keuken</p>
+                <a class="card" href="#">
+                  <article class="card-content">
+                    <article class="card-image">
+                    </article>
+                    <article class="card-info-wrapper">
+                      <article class="card-info">
+                        <article class="card-info-title">
+                          <p>Eetkamer</p>  
+                        </article>    
+                      </article>
+                    </article>
+                  </article>
                 </a>
-            </article>
-            <article class="row gapArticle">
-                <a class='show_bg' href="#">
-                    <p>Keuken</p>
+                <a class="card" href="#">
+                  <article class="card-content">
+                    <article class="card-image">
+                    </article>
+                    <article class="card-info-wrapper">
+                      <article class="card-info">
+                        <article class="card-info-title">
+                          <p>Slaapkamer</p>  
+                        </article>    
+                      </article>
+                    </article>
+                  </article>
                 </a>
-                <a class='show_bg' href="#">
-                    <p>Keuken</p>
+                <a class="card" href="#">
+                  <article class="card-content">
+                    <article class="card-image">
+                    </article>
+                    <article class="card-info-wrapper">
+                      <article class="card-info">
+                        <article class="card-info-title">
+                          <p>Badkamer</p>  
+                        </article>    
+                      </article>
+                    </article>
+                  </article>
                 </a>
-                <a class='show_bg' href="#">
-                    <p>Keuken</p>
+                <a class="card" href="#">
+                  <article class="card-content">
+                    <article class="card-image">
+                    </article>
+                    <article class="card-info-wrapper">
+                      <article class="card-info">
+                        <article class="card-info-title">
+                          <p>Voeg kamer toe</p>  
+                        </article>    
+                      </article>
+                    </article>
+                  </article>
                 </a>
             </article>
         </section>
-
-
-        <!-- <textarea id="message-history" cols="140" rows="20"></textarea>
-        <button class="button" id="toggle" value="woonkamer/schemerlamp">Toggle</button>
-        <button class="button" id="colour" value="woonkamer/schemerlamp">Kleur</button>
-        <button class="button" id="rainbow" value="woonkamer/schemerlamp">Rainbow mode</button>
-        <input class="inputColor" id="wheelvalue" type="text" data-wheelcolorpicker/> -->
     </main>
     <footer class="footer column">
         <article class="row footerGroot">
