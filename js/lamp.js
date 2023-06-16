@@ -32,6 +32,7 @@ function setupEventSource() {
                     object.id = value.friendly_name;
 
                     let label = document.createElement("label");
+                    label.classList.add("labelLamp")
                     label.innerHTML = value.friendly_name;
                     object.appendChild(label);
 
@@ -45,7 +46,9 @@ function setupEventSource() {
                                         if(value3.type == "binary") {
                                             let button = document.createElement("button");
                                             button.innerHTML = "Toggle";
+                                            button.classList.add("toggleButton")
                                             object.appendChild(button);
+
                                         }
                                     }
                                 }

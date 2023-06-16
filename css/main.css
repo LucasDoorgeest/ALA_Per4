@@ -119,12 +119,32 @@ body {
     background-image: url('../img/settings.jpg');
 }
 
+/*------------------------ Lamp aan/uit ------------------------ */
+
+.lampBody{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
 .object {
     background-color: rgb(30,30,30);
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 40vw;
+    height: 20vh;
+}
+
+.toggleButton{
+    padding: 5px;
+    border-radius: 5px;
+    height: 5vh;
 }
 
 /*------------------------ Cards ------------------------ */
