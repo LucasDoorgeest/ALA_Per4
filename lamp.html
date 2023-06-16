@@ -8,12 +8,20 @@
     <meta name="author" content="Lucas, Emre, Jayme, Max">
     <meta name="keywords" content="">
     <link id="favicon" rel="shortcut icon" type="image/png" href="img/logo_per4.png">
-    <script type="text/javascript" src="js/lamp.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="js/static/event_stream.js" defer></script>
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js" defer></script>
+    <script type="text/javascript" src="js/jquery.wheelcolorpicker.js" defer></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <script type="text/javascript" src="js/hover.js" defer></script>
+    <script type="text/javascript" src="js/lamp.js" defer></script>
     <title>Document</title>
 </head>
 <body class="lampBody">
-    
+    <textarea id="message-history" cols="140" rows="20"></textarea>
+    <button class="button" id="toggle" value="woonkamer/schemerlamp">Toggle</button>
+    <button class="button" id="colour" value="woonkamer/schemerlamp">Kleur</button>
+    <button class="button" id="rainbow" value="woonkamer/schemerlamp">Rainbow mode</button>
+    <input class="inputColor" id="wheelvalue" type="text" data-wheelcolorpicker/>
 </body>
 </html>

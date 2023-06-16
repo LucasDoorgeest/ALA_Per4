@@ -40,7 +40,7 @@ document.querySelector('#rainbow').onclick = (e) => {
     const button_topic = document.querySelector('#rainbow');
     const topic = button_topic.value;
   
-    const rainbowColors = ['#FF0000', '#FFA500', '#FFFF00', '#008000', '#0000FF', '#4B0082', '#EE82EE'];
+    const rainbowColors = ['#0000ff', '#ff0000'];
   
     function logColorWithDelay(color, delay) {
       setTimeout(function() {
@@ -67,7 +67,7 @@ document.querySelector('#rainbow').onclick = (e) => {
   
         const nextColorIndex = (rainbowColors.indexOf(color) + 1) % rainbowColors.length;
         const nextColor = rainbowColors[nextColorIndex];
-        const nextDelay = delay + 300;
+        const nextDelay = delay + 1000;
   
         logColorWithDelay(nextColor, nextDelay);
       }, delay);

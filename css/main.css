@@ -79,9 +79,15 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: white;
     padding: 1.5vh;
+    height: 10vh;
     color: #121415;
-    border-radius: 1rem;
+    border-radius: 5px;
     font-weight: 700;
+}
+
+.inputColor{
+    height: 10vh;
+    border-radius: 5px;
 }
 
 .centeredText {
