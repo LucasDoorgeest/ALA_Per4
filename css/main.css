@@ -84,43 +84,6 @@ body {
     font-weight: 700;
 }
 
-.show_bg {
-    background-image:
-    linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(2,2,15,0.3) 40%, rgba(43,125,200,1) 100%),
-    url('../img/keuken.jpg');
-    width: 30vmin;
-    height: 42vmin;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-.woonkamer {
-    background-image:
-    linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(2,2,15,0.3) 40%, rgba(43,125,200,1) 100%),
-    url('../img/woonkamer.jpg');
-    width: 30vmin;
-    height: 42vmin;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-.slaapkamer {
-    background-image:
-    linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(2,2,15,0.3) 40%, rgba(43,125,200,1) 100%),
-    url('../img/slaapkamer.jpg');
-    width: 30vmin;
-    height: 42vmin;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
 .centeredText {
     position: absolute;
     top: 50%;
@@ -128,26 +91,14 @@ body {
     transform: translate(-50%, -50%);
   }
 
-/*------------------------ Footer ------------------------ */
-
-.footerMini{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 32px 0;
+.keuken{
+    background-image: url('../img/keuken.jpg');
 }
 
-.footerGroot{
-    justify-content: center;
-    gap: 20vw;
+.woonkamer{
+    background-image: url('../img/woonkamer.jpg');
 }
-
-.footer{
-    border-top: #343a40 solid 1px;
-    padding-top: 30px;
-}
-
-/* Cards */
+/*------------------------ Cards ------------------------ */
 
 :root {
     --bg-color: #121415;
@@ -250,10 +201,6 @@ h3, span {
     justify-content: center;
     overflow: hidden;
     background-position: center;
-}
-
-.card-image:nth-child(1) {
-    background-image: url('../img/keuken.jpg');
     background-size: cover;
 }
 
@@ -275,6 +222,25 @@ h3, span {
     font-size: 1.2em;
     line-height: 20px;
     color: white;
+}
+
+/*------------------------ Footer ------------------------ */
+
+.footerMini{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.footerGroot{
+    justify-content: center;
+    gap: 20vw;
+}
+
+.footer{
+    border-top: #343a40 solid 1px;
+    padding-top: 30px;
 }
 
 /*----------------------------- Scrollbar ----------------------------*/
