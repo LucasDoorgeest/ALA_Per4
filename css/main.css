@@ -189,8 +189,8 @@ body {
 .card::after {  
     background: radial-gradient(
         600px circle at var(--mouse-x) var(--mouse-y), 
-        rgba(255, 255, 255, 0.4),
-        transparent 40%
+        rgba(54, 23, 253, 0.615),
+        transparent 80%
     );
     z-index: 1;
 }
@@ -225,12 +225,24 @@ h3, span {
     background-size: cover;
 }
 
+.card-image2 {
+    align-items: center;
+    display: flex;
+    height: 200px;
+    border-radius: 5px;
+    justify-content: center;
+    overflow: hidden;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .card-info-wrapper {
     align-items: center;
     display: flex;
     flex-grow: 1;
     justify-content: flex-start;
-    padding: 0px 20px;
+    padding: 10px 20px 0px;
 }
 
 .card-info {
@@ -262,6 +274,10 @@ h3, span {
 .footer{
     border-top: #343a40 solid 1px;
     padding-top: 30px;
+}
+
+.articleLink:hover{
+    color: rgba(54, 23, 253, 0.615);
 }
 
 /*----------------------------- Scrollbar ----------------------------*/
