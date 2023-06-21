@@ -127,17 +127,37 @@ body {
 
 /*------------------------ Lamp aan/uit ------------------------ */
 
-.lampBody{
+.feature{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     height: 100vh;
     width: 90vw;
     margin: auto;
     padding-top: 4vh;
+    gap: 1vh;
 }
 
-.object {
+.featureLabel{
+
+}
+
+.binary{
+
+}
+
+.numeric{
+    height: 5vh;
+}
+
+.composite{
+    width: 20vw;
+    height: 20vh;
+}
+
+
+/* .object {
     background-color: rgb(30,30,30);
     border-radius: 5px;
     color: white;
@@ -153,7 +173,7 @@ body {
     padding: 5px;
     border-radius: 5px;
     height: 5vh;
-}
+} */
 
 /*------------------------ Cards ------------------------ */
 
