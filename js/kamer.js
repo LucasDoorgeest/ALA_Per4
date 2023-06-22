@@ -66,7 +66,7 @@ if(kamer) {
                                                     featureLabel.classList.add("featureLabel");
                                                     featureDiv.appendChild(featureLabel);
                                                     
-                                                    let featureButton = document.createElement("input"); // Maak de checkbox, met class "binary", id "..._binary"
+                                                    let featureButton = document.createElement("input"); // Maak de checkbox, met class "binary"
                                                     featureButton.type = "checkbox";
                                                     featureButton.id = deviceName[1] + "_binary";
                                                     featureButton.classList.add("binary");
@@ -150,6 +150,6 @@ if(kamer) {
     
     setupEventSource();
 } else {
-    window.open("kamers.html", "_self");
+    window.open("index.html", "_self");
 }
 
