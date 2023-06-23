@@ -38,6 +38,8 @@ body {
     display: block;
     line-height: 1.5;
     background: linear-gradient(#001f32, 20%, #121415);
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 .row{
@@ -109,38 +111,57 @@ body {
     background-image: url(../img/gearsetting.png);
 }
 
-.eetkamer{
-    background-image: url('../img/eetkamer.jpg');
+.garage{
+    background-image: url('../img/garage.jpg');
 }
 
 .slaapkamer{
     background-image: url('../img/slaapkamer.jpg');
 }
 
-.badkamer{
-    background-image: url('../img/badkamer.jpg');
+.hal{
+    background-image: url('../img/hal.jpg');
 }
 
 .settings{
     background-image: url('../img/settings.jpg');
 }
 
-/*------------------------ Lamp aan/uit ------------------------ */
+/*------------------------ Lamp ------------------------ */
 
 .feature{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 90vw;
+}
+
+.perLamp{
+    border: #014570 1px solid;
+    border-radius: 1rem;
+    min-width: 60vw;
+    min-height: 20vh;
+    padding: 5vh 0;
     margin: auto;
-    transform: translateY(-10vh);
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lampen{
+    display: flex;
+    flex-direction: column;
 }
 
 .featureLabel{
     font-weight: 640;
-    padding-top: 10vh;
+    padding-top: 3vh;
+}
+
+.lampLabel{
+    font-size: 2rem;
 }
 
 .numeric{
@@ -329,189 +350,3 @@ h3, span {
     background: #343a40;
     border-radius: 10px;
   }
-
-/*------------------------ Wheel color picker ------------------------ */
-
-/**
- * Wheel Color Picker for jQuery
- * Base Stylesheet
- * 
- * https://raffer.one/projects/jquery-wheelcolorpicker
- * 
- * Copyright © 2011-2019 Fajar Chandra. All rights reserved.
- * Released under MIT License.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Note: Width, height, left, and top properties are handled by the 
- * plugin. These values might change on the fly.
- */
-
-.jQWCP-wWidget {
-  position: absolute;
-  width: 250px;
-  height: 200px;
-  background: #eee;
-  box-shadow: 1px 1px 4px rgba(0,0,0,.5);
-  border-radius: 4px;
-  border: solid 1px #aaa;
-  padding: 10px;
-  z-index: 1001;
-  touch-action: none;
-}
-
-.jQWCP-wWidget.jQWCP-block {
-  position: relative;
-  border-color: #aaa;
-  box-shadow: inset 1px 1px 1px #ccc;
-}
-
-.jQWCP-wWheel {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: relative;
-  float: left;
-  width: 180px;
-  height: 180px;
-  -webkit-border-radius: 90px;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: solid 1px #aaa;
-  margin: -1px;
-  margin-right: 10px;
-  transition: border .15s;
-  cursor: crosshair;
-}
-
-.jQWCP-wWheel:hover {
-  border-color: #666;
-}
-
-.jQWCP-wWheelOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0;
-  -webkit-border-radius: 90px;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.jQWCP-wWheelCursor {
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -6px -6px;
-  cursor: crosshair;
-  border: solid 2px #fff;
-  box-shadow: 1px 1px 2px #000;
-  border-radius: 50%;
-}
-
-.jQWCP-slider-wrapper,
-.jQWCP-wPreview {
-  position: relative;
-  width: 20px;
-  height: 180px;
-  float: left;
-  margin-right: 10px;
-}
-
-.jQWCP-wWheel:last-child,
-.jQWCP-slider-wrapper:last-child,
-.jQWCP-wPreview:last-child {
-    margin-right: 0;
-}
-
-.jQWCP-slider,
-.jQWCP-wPreviewBox {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  box-sizing: border-box;
-  border: solid 1px #aaa;
-  margin: -1px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  transition: border .15s;
-}
-
-.jQWCP-slider {
-  cursor: crosshair;
-}
-
-.jQWCP-slider-wrapper:hover .jQWCP-slider {
-  border-color: #666;
-}
-
-.jQWCP-scursor {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 6px;
-  margin: -5px -1px -5px -3px;
-  cursor: crosshair;
-  border: solid 2px #fff;
-  box-shadow: 1px 1px 2px #000;
-  border-radius: 4px;
-}
-
-.jQWCP-wAlphaSlider,
-.jQWCP-wPreviewBox {
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEVAQEB/f39eaJUuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYRBDgK9dKdMgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAARSURBVAjXY/jPwIAVYRf9DwB+vw/x6vMT1wAAAABJRU5ErkJggg==') center center;
-}
-
-.jQWCP-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-/* Mobile layout */
-
-.jQWCP-mobile.jQWCP-wWidget {
-    position: fixed;
-    bottom: 0;
-    left: 0 !important;
-    top: auto !important;
-    width: 100%;
-    height: 75%;
-    max-height: 240px;
-    box-sizing: border-box;
-    border-radius: 0;
-}
-
-/*----------------------------- frelder ----------------------------*/
-
-#message-history {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    font-size: 18px;
-    width: 50vw; /* 50% of the viewport width */
-    height: 33.33vh; /* 1/3 of the viewport height */
-    margin: auto; /* center horizontally */
-    position: absolute;
-    top: 50%; /* center vertically */
-    left: 50%; /* center horizontally */
-    transform: translate(-50%, -50%); /* adjust to center properly */
-}
-
-/* Optional: Add padding to the box */
-#message-history {
-    padding: 10px;
-}
-
-.flex_row {
-    display: flex;
-}
